@@ -53,14 +53,15 @@
 AI-Resume-Analyzer-ATS/
 │
 ├─ src/
-│ ├─ main/
-│ │ ├─ java/ # Java source code
-│ │ └─ resources/
-│ │ └─ application.properties.example # Config template (API keys hidden)
-│ └─ test/ # Unit tests
-├─ Dockerfile # Docker build instructions
-├─ docker-compose.yml # Docker Compose setup
-├─ pom.xml # Maven project file
-├─ README.md # Project documentation
-└─ .gitignore # Files to ignore in git
+│  ├─ main/
+│  │  ├─ java/                   # All Java source code
+│  │  └─ resources/
+│  │     └─ application.properties.example  # Config template only
+│  └─ test/                       # Unit test files
+├─ Dockerfile                     # Docker build instructions
+├─ docker-compose.yml             # Docker Compose setup
+├─ pom.xml                        # Maven project file
+├─ README.md                      # Project documentation
+└─ .gitignore                     # Files to ignore in Git
+
 
