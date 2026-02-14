@@ -17,7 +17,7 @@
 - [Project Structure](#project-structure)  
 - [Installation](#installation)  
 - [Docker Setup](#docker-setup)  
-- [Usage](#usage)  
+- [live Demo](#live-demo)  
 - [Grok AI Integration](#grok-ai-integration)  
 - [Contributing](#contributing)  
 - [License](#license)  
@@ -83,9 +83,9 @@ grok.api.key=YOUR_GROK_API_KEY
 3.Build the project with Maven:
 
 mvn clean install
+```
 ---
-
-##  **Docker** Setup
+## Docker Setup
 
 1.Build Docker image:
 docker build -t ai-resume-analyzer .
@@ -98,5 +98,55 @@ docker-compose up --build
 
 The application will run at http://localhost:8080.
 
+```
+---
+```
+## live Demo
+
+
+Experience the **AI Resume Analyzer (ATS)** live:
+🔗 Click here to try the live demo](https://ai-resume-analyzer-ats.onrender.com/) 
+```
+---
+```
+## Grok AI Integration
+The backend uses Grok AI API to analyze resumes:
+
+Extracts skills, experience, education
+
+Scores resumes against job descriptions
+
+Provides recommendations for ATS optimization
+
+Configuration: Store your API key in application.properties
+
+Security: Do not commit your API key. Use .gitignore to exclude
+
+src/main/resources/application.properties
 
 ---
+---
+## Contributing
+
+We welcome contributions!
+
+Fork the repository
+
+Create a branch: git checkout -b feature/feature-name
+
+Commit your changes: git commit -m "Add feature"
+
+Push to the branch: git push origin feature/feature-name
+
+Open a Pull Request
+
+---
+---
+## License
+
+This project is licensed under the MIT License – see the LICENSE
+ file for details.
+```
+
+```
+## Developed by A. Yogeshwaran
