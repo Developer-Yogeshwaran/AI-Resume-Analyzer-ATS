@@ -64,7 +64,7 @@ AI-Resume-Analyzer-ATS/
 ├─ pom.xml
 ├─ README.md
 └─ .gitignore
-
+```
 ---
 ## Installation
 
