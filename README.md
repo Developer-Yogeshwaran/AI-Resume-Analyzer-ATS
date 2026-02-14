@@ -65,3 +65,22 @@ AI-Resume-Analyzer-ATS/
 ├─ README.md
 └─ .gitignore
 
+---
+## Installation
+
+1. Clone the repository:
+
+```bash
+
+git clone https://github.com/Developer-Yogeshwaran/AI-Resume-Analyzer-ATS.git
+cd AI-Resume-Analyzer-ATS
+
+2.Configure your Grok AI API key:
+
+# src/main/resources/application.properties
+grok.api.key=YOUR_GROK_API_KEY
+
+3.Build the project with Maven:
+
+mvn clean install
+
