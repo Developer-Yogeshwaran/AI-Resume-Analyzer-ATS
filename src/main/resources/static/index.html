@@ -2,38 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AI Resume Analyzer</title>
+    <title>AI Resume Journey</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 <div class="container">
 
-    <header>
-        <h1><i class="fa fa-robot"></i> AI Resume Analyzer</h1>
-        <p>Upload your resume and get insights on skills, experience, and fit</p>
+    <!-- HERO JOURNEY HEADER -->
+    <header class="hero">
+        <h1><i class="fa fa-robot"></i> AI Resume Journey</h1>
+        <p class="tagline">
+            Every career begins with a single step.  
+            <strong>Your resume is that first step.</strong>
+        </p>
+        <p class="subtext">
+            Let’s analyze your foundation and guide you toward interview readiness.
+        </p>
     </header>
 
+    <!-- CAREER PATH VISUAL -->
+    <section class="career-path">
+        <div class="stage active">🌱 Foundation</div>
+        <div class="stage">🌿 Growth</div>
+        <div class="stage">🌳 Market Ready</div>
+        <div class="stage">🚀 Interview Ready</div>
+    </section>
+
+    <!-- UPLOAD SECTION -->
     <section class="upload-card">
         <div class="file-upload">
             <i class="fa fa-file-upload fa-2x"></i>
             <input type="file" id="resumeFile" />
         </div>
-        <button class="primary-btn" onclick="analyzeResume()">Analyze Resume</button>
+        <button class="primary-btn" onclick="analyzeResume()">
+            Start My Career Journey
+        </button>
     </section>
 
+    <!-- RESULT SECTION -->
     <section class="result-card">
-        <h2><i class="fa fa-chart-line"></i> Analysis Result</h2>
+        <h2><i class="fa fa-chart-line"></i> Growth Insight</h2>
         <div id="result" class="result-box">
-            <p class="placeholder">Your resume analysis will appear here...</p>
+            <p class="placeholder">
+                Your resume journey insight will appear here...
+            </p>
         </div>
     </section>
 
+    <!-- MOTIVATIONAL FOOTER -->
     <footer>
-        <a class="link-btn" href="ats.html"><i class="fa fa-arrow-right"></i> Check ATS Score</a>
+        <p class="motivation">
+            "Progress begins with awareness. Growth follows action."
+        </p>
+        <a class="link-btn" href="ats.html">
+            <i class="fa fa-arrow-right"></i> Continue to ATS Optimization
+        </a>
     </footer>
 
 </div>
 <script src="js/app.js"></script>
 </body>
 </html>
+

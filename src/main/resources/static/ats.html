@@ -2,36 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ATS Score Checker</title>
+    <title>ATS Optimization | AI Resume Journey</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 <div class="container">
 
-    <header>
-        <h1><i class="fa fa-tasks"></i> ATS Resume Score Checker</h1>
-        <p>Compare your resume with job descriptions and get an ATS score instantly</p>
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <h1><i class="fa fa-bullseye"></i> ATS Optimization Stage</h1>
+        <p class="tagline">
+            Align your resume with industry expectations.
+        </p>
+        <p class="subtext">
+            Let’s measure how well your resume matches your dream job.
+        </p>
     </header>
 
+    <!-- CAREER PATH -->
+    <section class="career-path">
+        <div class="stage">🌱 Foundation</div>
+        <div class="stage active">🌿 Growth</div>
+        <div class="stage">🌳 Market Ready</div>
+        <div class="stage">🚀 Interview Ready</div>
+    </section>
+
+    <!-- INPUT SECTION -->
     <section class="upload-card">
         <div class="file-upload">
-            <i class="fa fa-file-upload fa-2x"></i>
+            <i class="fa fa-file-alt fa-2x"></i>
             <input type="file" id="atsResumeFile" />
         </div>
-        <textarea id="jobDescription" placeholder="Paste Job Description here..."></textarea>
-        <button class="primary-btn" onclick="checkATS()">Check ATS Score</button>
+
+        <textarea id="jobDescription" 
+            placeholder="Paste the Job Description here to compare your resume with industry requirements...">
+        </textarea>
+
+        <button class="primary-btn" onclick="checkATS()">
+            Analyze Job Compatibility
+        </button>
     </section>
 
+    <!-- RESULT SECTION -->
     <section class="result-card">
-        <h2><i class="fa fa-bullseye"></i> ATS Result</h2>
+        <h2><i class="fa fa-chart-pie"></i> ATS Growth Report</h2>
         <div id="atsResult" class="result-box">
-            <p class="placeholder">Your ATS score will appear here...</p>
+            <p class="placeholder">
+                Your compatibility score and growth suggestions will appear here...
+            </p>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <a class="link-btn" href="index.html"><i class="fa fa-arrow-left"></i> Back to Resume Analyzer</a>
+        <p class="motivation">
+            "Optimization transforms preparation into opportunity."
+        </p>
+        <a class="link-btn" href="index.html">
+            <i class="fa fa-arrow-left"></i> Back to Resume Foundation
+        </a>
     </footer>
 
 </div>
