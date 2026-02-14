@@ -83,4 +83,20 @@ grok.api.key=YOUR_GROK_API_KEY
 3.Build the project with Maven:
 
 mvn clean install
+---
 
+##  **Docker** Setup
+
+1.Build Docker image:
+docker build -t ai-resume-analyzer .
+
+2.Run with Docker:
+docker run -p 8080:8080 ai-resume-analyzer
+
+3.Alternatively, use Docker Compose:
+docker-compose up --build
+
+The application will run at http://localhost:8080.
+
+
+---
