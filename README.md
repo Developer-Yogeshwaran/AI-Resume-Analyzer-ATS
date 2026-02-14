@@ -99,7 +99,6 @@ docker-compose up --build
 The application will run at http://localhost:8080.
 
 ```
----
 ```
 ## live Demo
 
@@ -107,7 +106,6 @@ The application will run at http://localhost:8080.
 Experience the **AI Resume Analyzer (ATS)** live:
 🔗 Click here to try the live demo](https://ai-resume-analyzer-ats.onrender.com/) 
 ```
----
 ```
 ## Grok AI Integration
 The backend uses Grok AI API to analyze resumes:
