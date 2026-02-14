@@ -1,0 +1,291 @@
+/* --- Base Reset --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    width: 650px;
+    max-width: 95%;
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px 35px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+}
+
+header h1 {
+    font-size: 28px;
+    color: #1f3c88;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.upload-card, .result-card {
+    background: #f8f9fb;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.upload-card .file-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.upload-card input[type="file"] {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.upload-card textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    resize: none;
+    min-height: 130px;
+    font-size: 14px;
+}
+
+.primary-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #1f3c88, #4e73d4);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s all;
+}
+
+.primary-btn:hover {
+    background: linear-gradient(90deg, #0f2468, #2a4ea2);
+}
+
+.result-card h2 {
+    font-size: 20px;
+    color: #1f3c88;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.result-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    white-space: pre-wrap;
+}
+
+.result-box .placeholder {
+    color: #999;
+    text-align: center;
+}
+
+/* ATS Progress Bar */
+.progress-container {
+    background: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #1f3c88, #4e73d4);
+    border-radius: 20px;
+    transition: width 1s ease;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.link-btn {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1f3c88;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.link-btn:hover {
+    color: #0f2468;
+}
+
+@media(max-width: 700px){
+    .container {
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+}
+/* Dashboard Cards for Resume Analysis */
+.dashboard-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.dashboard-card h3 {
+    color: #1f3c88;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.tag.matched { background: #28a745; }
+.tag.missing { background: #dc3545; }
+
+/* ATS Result Progress */
+.progress-container {
+    background: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #1f3c88, #4e73d4);
+    border-radius: 20px;
+    transition: width 1s ease;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.tags-section h4 {
+    margin-top: 15px;
+    color: #1f3c88;
+    font-size: 14px;
+}
+
+.tags-section {
+    margin-top: 10px;
+}
+.primary-btn {
+    width: 100%;
+    padding: 14px;
+    background: rgba(64, 123, 255, 0.85); /* soft professional blue */
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s all;
+    backdrop-filter: blur(6px);
+}
+
+.primary-btn:hover {
+    background: rgba(64, 123, 255, 1);
+}
+.progress-container {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, rgba(64,123,255,0.85), rgba(100,163,255,0.85));
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    line-height: 25px;
+}
+.container {
+    width: 650px;
+    max-width: 95%;
+    background: rgba(255, 255, 255, 0.12); /* frosted glass */
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.upload-card, .result-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Shimmer placeholder card */
+.shimmer-card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    height: 80px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+

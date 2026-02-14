@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ATS Score Checker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <h1><i class="fa fa-tasks"></i> ATS Resume Score Checker</h1>
+        <p>Compare your resume with job descriptions and get an ATS score instantly</p>
+    </header>
+
+    <section class="upload-card">
+        <div class="file-upload">
+            <i class="fa fa-file-upload fa-2x"></i>
+            <input type="file" id="atsResumeFile" />
+        </div>
+        <textarea id="jobDescription" placeholder="Paste Job Description here..."></textarea>
+        <button class="primary-btn" onclick="checkATS()">Check ATS Score</button>
+    </section>
+
+    <section class="result-card">
+        <h2><i class="fa fa-bullseye"></i> ATS Result</h2>
+        <div id="atsResult" class="result-box">
+            <p class="placeholder">Your ATS score will appear here...</p>
+        </div>
+    </section>
+
+    <footer>
+        <a class="link-btn" href="index.html"><i class="fa fa-arrow-left"></i> Back to Resume Analyzer</a>
+    </footer>
+
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
