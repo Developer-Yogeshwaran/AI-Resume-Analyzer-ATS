@@ -50,18 +50,18 @@
 ---
 
 ## Project Structure
+```text
 AI-Resume-Analyzer-ATS/
 │
 ├─ src/
 │  ├─ main/
-│  │  ├─ java/                   # All Java source code
+│  │  ├─ java/
 │  │  └─ resources/
-│  │     └─ application.properties.example  # Config template only
-│  └─ test/                       # Unit test files
-├─ Dockerfile                     # Docker build instructions
-├─ docker-compose.yml             # Docker Compose setup
-├─ pom.xml                        # Maven project file
-├─ README.md                      # Project documentation
-└─ .gitignore                     # Files to ignore in Git
-
+│  │     └─ application.properties.example
+│  └─ test/
+├─ Dockerfile
+├─ docker-compose.yml
+├─ pom.xml
+├─ README.md
+└─ .gitignore
 
